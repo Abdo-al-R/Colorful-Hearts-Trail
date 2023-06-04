@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&family=Poppins:wght@300;400;500;600;700&display=swap');
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+}
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+#root,
+#__next {
+  isolation: isolate;
+}
+:root{
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  background-color: rgb(0, 0, 0);
+  overflow: hidden;
+}
+span{
+  position: absolute;
+  background-image: url("../images/heart.png");
+  background-size: cover;
+  pointer-events: none;
+  transform: translate( -50% , -50%);
+  animation: anime 2s linear infinite;
+}
+
+@keyframes anime {
+  0%{
+    transform: translate( -50% , -50%);
+    opacity: 1;
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    transform: translate( -50% , -1000%);
+    opacity: 0;
+    filter: hue-rotate(720deg);
+
+  }
+}
